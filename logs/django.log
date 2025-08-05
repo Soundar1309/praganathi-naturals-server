@@ -1,0 +1,1413 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/
+Method Not Allowed: /api/register/
+Method Not Allowed: /api/register/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/
+Method Not Allowed: /api/register/
+Unauthorized: /api/categories/
+/home/sasikalavijayakumar/ecommerce/backend/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/users
+Bad Request: /api/register/
+Not Found: /api/users
+Bad Request: /api/register/
+Bad Request: /api/register/
+Bad Request: /api/register/
+Internal Server Error: /api/profile
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/profile
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Watching for file changes with StatReloader
+Unauthorized: /api/products/
+Unauthorized: /api/categories/
+/home/sasikalavijayakumar/ecommerce/backend/products/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/ecommerce/backend/products/models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Unauthorized: /api/cart_items/
+/home/sasikalavijayakumar/ecommerce/backend/carts/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/ecommerce/backend/carts/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /api/cart_items
+Traceback (most recent call last):
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sasikalavijayakumar/ecommerce/backend/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/cart_items/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.235.200.199:8000'. You may need to add '13.235.200.199' to ALLOWED_HOSTS.
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /api/
+Not Found: /api/ products/
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /api/
+Not Found: /api/ products/
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/
+Not Found: /api/ categories/
+Not Found: /api/
+Not Found: /api/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/
+Bad Request: /api/products/
+Bad Request: /api/products/
+Bad Request: /api/products/
+Bad Request: /api/register/
+Not Found: /api
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/
+Not Found: /api/
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /api
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com:8000'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'backend.pragathinaturalfarm.com'. You may need to add 'backend.pragathinaturalfarm.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.git/config
+Not Found: /@vite/env
+Not Found: /actuator/env
+Not Found: /server
+Not Found: /.vscode/sftp.json
+Not Found: /about
+Not Found: /debug/default/view
+Not Found: /v2/_catalog
+Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+Not Found: /server-status
+Not Found: /login.action
+Not Found: /_all_dbs
+Not Found: /.DS_Store
+Not Found: /.env
+Not Found: /.git/config
+Not Found: /s/939313e2030323e2533323e23313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+Not Found: /config.json
+Not Found: /telescope/requests
+Not Found: /info.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: //wp-json/wc/store/products/collection-data
+Not Found: /favicon.ico
+Not Found: /Core/Skin/Login.aspx
+Not Found: /webui/
+Not Found: /favicon.ico
+Not Found: /geoserver/web/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /boaform/admin/formLogin
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Forbidden (Referer checking failed - no Referer.): /
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /boaform/admin/formLogin
+Not Found: /Core/Skin/Login.aspx
+Not Found: /_profiler/phpinfo
+Not Found: /_profiler/phpinfo.php
+Not Found: /phpinfo
+Not Found: /phpinfo.php
+Not Found: /info
+Not Found: /info.php
+Not Found: /test2.php
+Not Found: /test
+Not Found: /index.php/phpinfo
+Not Found: /app_dev.php/_profiler/phpinfo
+Not Found: /php.php
+Not Found: /test.php
+Not Found: /frontend_dev.php/$
+Not Found: /index.php
+Not Found: /php-info.php
+Not Found: /test1.php
+Not Found: /config
+Not Found: /debug/default
+Not Found: /main.js
+Not Found: /config/constants.js
+Not Found: /config/config.js
+Not Found: /app.js
+Not Found: /environment.ts
+Not Found: /src/config.js
+Not Found: /settings.json
+Not Found: /app.config.js
+Not Found: /src/config/environment.js
+Not Found: /js/config.js
+Not Found: /manifest.json
+Not Found: /index.js
+Not Found: /config.js
+Not Found: /src/aws-exports.js
+Not Found: /.env
+Not Found: /app/.env
+Not Found: /.env.bak
+Not Found: /.env.example
+Not Found: /.env.local
+Not Found: /.env.old
+Not Found: /.env.prod
+Not Found: /.env.production.local
+Not Found: /.env.stage
+Not Found: /api/.env
+Not Found: /apps/.env
+Not Found: /.git/config
+Not Found: /etc/caddy/Caddyfile
+Not Found: /api/config/tsconfig.json
+Not Found: /application.properties
+Not Found: /products/.gitlab-ci.yml
+Not Found: /.aws/credentials
+Not Found: /config/database.php
+Not Found: /appsettings.json
+Not Found: /docs/deployment.md
+Not Found: /app/routes.py
+Not Found: /src/main/resources/appsettings.yml
+Not Found: /config/test.json
+Not Found: /docker-compose.yml
+Not Found: /config/config.json
+Not Found: /resources/application.conf
+Not Found: /config/application.yml
+Not Found: /server.js
+Not Found: /application/config/constants.php
+Not Found: /config/services.yaml
+Not Found: /app/etc/env.php
+Not Found: /.profile
+Not Found: /config/config.ini
+Not Found: /wp-config.php
+Not Found: /gulpfile.js
+Not Found: /config.php
+Not Found: /config.properties
+Not Found: /config/aws.json
+Not Found: /config/settings.py
+Not Found: /config.ini
+Not Found: /ecosystem.config.js
+Not Found: /config.json
+Not Found: /src/main/resources/application.properties
+Not Found: /config/config.php
+Not Found: /.aws/config
+Not Found: /appsettings.Development.json
+Not Found: /README.md
+Not Found: /k8s/deployment.yaml
+Not Found: /project/settings.py
+Not Found: /Dockerfile
+Not Found: /Program.cs
+Not Found: /config/default.json
+Not Found: /config/production.json
+Not Found: /config/development.yaml
+Not Found: /.flaskenv
+Not Found: /config/config.yaml
+Not Found: /config/secrets.json
+Not Found: /config/application.rb
+Not Found: /config/environments/production.rb
+Not Found: /config/environments/development.rb
+Not Found: /config/initializers/devise.rb
+Not Found: /config/database.yml
+Not Found: /config/secrets.yml
+Not Found: /config/app.php
+Not Found: /config/cache.php
+Not Found: /config/config.yml
+Not Found: /config/packages/prod/doctrine.yaml
+Not Found: /src/main/resources/application.yml
+Not Found: /src/main/resources/application-dev.properties
+Not Found: /src/main/resources/application-prod.properties
+Not Found: /config/applicationContext.xml
+Not Found: /appsettings.Production.json
+Not Found: /web.config
+Not Found: /secrets/appsettings.json
+Not Found: /config/config.go
+Not Found: /src/config/config.yaml
+Not Found: /src/config/config.json
+Not Found: /config/app.yaml
+Not Found: /Config.plist
+Not Found: /Info.plist
+Not Found: /Environment.xcconfig
+Not Found: /Config.xcconfig
+Not Found: /App/Config.swift
+Not Found: /App/Info.plist
+Not Found: /src/main/java/com/example/config/Config.kt
+Not Found: /local.properties
+Not Found: /src/main/assets/config.json
+Not Found: /config/config.exs
+Not Found: /config/prod.exs
+Not Found: /config/dev.exs
+Not Found: /config/runtime.exs
+Not Found: /config/releases.exs
+Not Found: /Rocket.toml
+Not Found: /config/Config.toml
+Not Found: /src/config.rs
+Not Found: /config.yml
+Not Found: /environments/development.yml
+Not Found: /environments/production.yml
+Not Found: /app.pl
+Not Found: /bin/app.pl
+Not Found: /conf/application.conf
+Not Found: /conf/development.conf
+Not Found: /conf/production.conf
+Not Found: /build.sbt
+Not Found: /project/plugins.sbt
+Not Found: /src/config.clj
+Not Found: /.lein-env
+Not Found: /project.clj
+Not Found: /resources/config.edn
+Not Found: /config/config.jl
+Not Found: /config/development.jl
+Not Found: /config/production.jl
+Not Found: /config/routes.jl
+Not Found: /config/database.jl
+Not Found: /src/config.ml
+Not Found: /src/server/server.ml
+Not Found: /config/sys.config
+Not Found: /rel/sys.config
+Not Found: /rel/vm.args
+Not Found: /config/application.cr
+Not Found: /config/config.cr
+Not Found: /config/development.cr
+Not Found: /config/production.cr
+Not Found: /config/routes.cr
+Not Found: /config.nim
+Not Found: /config/development.nim
+Not Found: /config/production.nim
+Not Found: /src/config.nim
+Not Found: /src/routes.nim
+Not Found: /global.R
+Not Found: /server.R
+Not Found: /ui.R
+Not Found: /config.R
+Not Found: /app.R
+Not Found: /config.m
+Not Found: /config.f90
+Not Found: /config.cbl
+Not Found: /Sources/App/configure.swift
+Not Found: /Sources/App/routes.swift
+Not Found: /Resources/Config
+Not Found: /pubspec.yaml
+Not Found: /config.dart
+Not Found: /src/main.rs
+Not Found: /Application.cfc
+Not Found: /Application.cfm
+Not Found: /config/config.cfc
+Not Found: /config/settings.cfc
+Not Found: /config/environment.cfc
+Not Found: /.cfconfig.json
+Not Found: /config.lua
+Not Found: /config/application.lua
+Not Found: /config/development.lua
+Not Found: /config/production.lua
+Not Found: /config/routes.lua
+Not Found: /config/db.lua
+Not Found: /grails-app/conf/application.yml
+Not Found: /grails-app/conf/application.groovy
+Not Found: /grails-app/conf/application.properties
+Not Found: /grails-app/conf/logback.groovy
+Not Found: /grails-app/conf/bootstrap.groovy
+Not Found: /.ebextensions/myconfig.config
+Not Found: /cloudformation/template.yaml
+Not Found: /cloudformation/template.json
+Not Found: /appspec.yml
+Not Found: /scripts/install_dependencies.sh
+Not Found: /scripts/start_server.sh
+Not Found: /apprunner.yaml
+Not Found: /localstack/config.json
+Not Found: /meshes/mesh_config.json
+Not Found: /stepfunctions/state-machine-definition.json
+Not Found: /stepfunctions/state-machine-definition.yaml
+Not Found: /config.yaml
+Not Found: /etc/environment
+Not Found: /etc/profile.d
+Not Found: /home/ec2-user/.bashrc
+Not Found: /home/ec2-user/.aws/credentials
+Not Found: /home/ec2-user/.aws/config
+Not Found: /ecs-params.yml
+Not Found: /ebextensions.config
+Not Found: /.elasticbeanstalk/config.yml
+Not Found: /bucket-name/config/config.json
+Not Found: /bucket-name/config/config.yaml
+Not Found: /bucket-name/config/.env
+Not Found: /CloudFormation
+Not Found: /cloudformation-template.json
+Not Found: /cloudformation-template.yaml
+Not Found: /kubernetes/deployment.yaml
+Not Found: /kubernetes/service.yaml
+Not Found: /kubernetes/configmap.yaml
+Not Found: /kubernetes/secrets.yaml
+Not Found: /amplify/.config/project-config.json
+Not Found: /amplify/backend/config.json
+Not Found: /amplify/backend/environment-parameters.json
+Not Found: /bin/app.ts
+Not Found: /lib/my-stack.ts
+Not Found: /cdk.json
+Not Found: /serverless.yml
+Not Found: /Terraform
+Not Found: /main.tf
+Not Found: /variables.tf
+Not Found: /terraform.tfvars
+Not Found: /template.yaml
+Not Found: /samconfig.toml
+Not Found: /CodePipeline
+Not Found: /buildspec.yml
+Not Found: /pipeline.yml
+Not Found: /config/database.json
+Not Found: /config/application.json
+Not Found: /config/settings.json
+Not Found: /provider.tf
+Not Found: /lambda_function.py
+Forbidden (CSRF cookie not set.): /
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /v1/models
+Not Found: /v1/models
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /Core/Skin/Login.aspx
+Not Found: /form.html
+Not Found: /upl.php
+Not Found: /t4
+Not Found: /geoip/
+Not Found: /favicon.ico
+Not Found: /1.php
+Not Found: /systembc/password.php
+Not Found: /password.php
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /robots.txt
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /Core/Skin/Login.aspx
+Not Found: /.git/config
+Not Found: /phpinfo.php
+Not Found: /phpinfo
+Not Found: /info.php
+Not Found: /php.php
+Not Found: /test.php
+Not Found: /debug.php
+Not Found: /debug
+Not Found: /.env
+Not Found: /env
+Not Found: /debug.txt
+Not Found: /phpinfo.txt
+Not Found: /info.txt
+Not Found: /config.php
+Not Found: /config
+Not Found: /config.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /Core/Skin/Login.aspx
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /sftp.json
+Not Found: /sftp-config.json
+Not Found: /.vscode/sftp.json
+Not Found: /.well-known/security.txt
+Not Found: /js/lkk_ch.js
+Not Found: /js/twint_ch.js
+Not Found: /Core/Skin/Login.aspx
+Not Found: /actuator/health
+Not Found: /favicon.ico
+Not Found: /sitemap.xml
+Not Found: /robots.txt
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /developmentserver/metadatauploader
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /Core/Skin/Login.aspx
+Not Found: /portal/redlion
+Not Found: /.env
+Not Found: /etc/ssl/private/server.key
+Not Found: /_vti_pvt/service.pwd
+Not Found: /.vscode/sftp.json
+Not Found: /.ssh/id_rsa
+Not Found: /user_secrets.yml
+Not Found: /secrets.json
+Not Found: /config.json
+Not Found: /.env
+Not Found: /db/schema.rb
+Not Found: /config.yaml
+Not Found: /.env.production
+Not Found: /cloud-config.yml
+Not Found: /config/production.json
+Not Found: /database_backup.sql
+Not Found: /server.key
+Not Found: /.ssh/id_ecdsa
+Not Found: /server-status
+Not Found: /config.php
+Not Found: /database.sql
+Not Found: /wp-admin/setup-config.php
+Not Found: /config.yml
+Not Found: /.aws/credentials
+Not Found: /web.config
+Not Found: /docker-compose.yml
+Not Found: /phpinfo.php
+Not Found: /backup.sql
+Not Found: /settings.py
+Not Found: /.ssh/id_ed25519
+Not Found: /.svn/wc.db
+Not Found: /backup.zip
+Not Found: /dump.sql
+Not Found: /wp-config.php
+Not Found: /feed
+Not Found: /backup.tar.gz
+Not Found: /config.xml
+Not Found: /api/.env
+Not Found: /.git/HEAD
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /Core/Skin/Login.aspx
+Not Found: /boaform/admin/formLogin
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /*
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /*
+Not Found: /robots.txt
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /owa/auth/x.js
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /robots.txt
+Not Found: /hello.world
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /phpunit/Util/PHP/eval-stdin.php
+Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /index.php
+Not Found: /public/index.php
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /containers/json
+Not Found: /Core/Skin/Login.aspx
+Not Found: /boaform/admin/formLogin
+Not Found: /developmentserver/metadatauploader
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Watching for file changes with StatReloader
+Not Found: /api
+Not Found: /profile/
+Not Found: /carts/
+Unauthorized: /api/profile/
+Unauthorized: /api/carts/
+Unauthorized: /api/carts/
+Unauthorized: /api/profile/
+Bad Request: /api/login/
+Bad Request: /api/login/
+Bad Request: /api/login/
+Not Found: /api/product
+Not Found: /api/ products/
+Not Found: /login/
+Bad Request: /api/login/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/login/
+Bad Request: /api/login/
+Not Found: /api/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Bad Request: /api/products/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /wiki
+Not Found: /products
+Not Found: /categories
+Not Found: /products
+Not Found: /login
+Not Found: /category
+Not Found: /api/category
+Not Found: /categories
+Not Found: /products
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /products
+Not Found: /categories
+Not Found: /Core/Skin/Login.aspx
+Bad Request: /api/login/
+Bad Request: /api/products/
+Bad Request: /api/products/
+Bad Request: /api/products/
+Bad Request: /api/products/
+Bad Request: /api/products/
+Not Found: /api/
+Not Found: /ab2g
+Not Found: /ab2h
+Not Found: /alive.php
+Not Found: /teorema505
+Bad Request: /api/products/
+Bad Request: /api/products/
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /*
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/praganathi-naturals-server/venv/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /*
+Not Found: /sitemap.xml
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /manager/text/list
+Not Found: /login
+Not Found: /Core/Skin/Login.aspx
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /.git/config
+Not Found: /webui/
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /geoserver/web/
+Not Found: /.git/config
+Not Found: /api
+Bad Request: /api/products/
