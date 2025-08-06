@@ -1411,3 +1411,83 @@ Not Found: /geoserver/web/
 Not Found: /.git/config
 Not Found: /api
 Bad Request: /api/products/
+Watching for file changes with StatReloader
+Not Found: /api/carts/
+Not Found: /api/carts/
+Not Found: /api/categories/
+Not Found: /api/products/
+Not Found: /api/products/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/categories
+Not Found: /api/carts/
+Not Found: /api/products
+Watching for file changes with StatReloader
+Not Found: /api/products
+Not Found: /api/products/
+Not Found: /api/carts/
+Not Found: /api/carts/
+Not Found: /api/carts/
+Not Found: /api/logout/
+Not Found: /api/carts/
+Not Found: /api/carts/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/products
+Not Found: /api/categories
+Bad Request: /api/users/login/
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/carts/
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/carts/
+Not Found: /api/products
+Not Found: /api/categories
+Not Found: /api/carts/
+Not Found: /api/carts/
+Not Found: /api/products
+Not Found: /api/categories
+Bad Request: /api/users/login/
+Not Found: /api/categories
+Not Found: /api/products
+Not Found: /api/products
+Not Found: /favicon.ico
+Unauthorized: /api/carts/carts/
