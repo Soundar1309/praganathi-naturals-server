@@ -12,18 +12,26 @@ class CategoryViewSet(generics.ListCreateAPIView):
     """Category views equivalent to Rails CategoriesController"""
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     search_fields = ['name', 'description']
     ordering_fields = ['name', 'created_at']
     ordering = ['name']
+    
+    def get_permissions(self):
+        if self.request.method in ['POST', 'PUT', 'PATCH', 'DELETE']:
+            return [IsAdminUser()]
+        return [permissions.AllowAny()]
 
 
 class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
     """Category detail view"""
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    
+    def get_permissions(self):
+        if self.request.method in ['PUT', 'PATCH', 'DELETE']:
+            return [IsAdminUser()]
+        return [permissions.AllowAny()]
 
 
 class ProductViewSet(generics.ListCreateAPIView):

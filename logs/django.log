@@ -1491,3 +1491,40 @@ Not Found: /api/products
 Not Found: /api/products
 Not Found: /favicon.ico
 Unauthorized: /api/carts/carts/
+Watching for file changes with StatReloader
+Unauthorized: /api/products/categories/
+Unauthorized: /api/products/products/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/products/products/
+Bad Request: /api/users/login/
+Bad Request: /api/users/login/
+Bad Request: /api/users/login/
