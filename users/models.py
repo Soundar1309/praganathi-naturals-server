@@ -14,6 +14,7 @@ class User(AbstractUser):
     phone = models.CharField(max_length=15, blank=True, validators=[
         RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
     ])
+    wishlist = models.JSONField(default=list, blank=True)  # Array of product IDs
     
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']

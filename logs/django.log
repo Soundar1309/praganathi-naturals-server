@@ -1528,3 +1528,45 @@ Unauthorized: /api/products/products/
 Bad Request: /api/users/login/
 Bad Request: /api/users/login/
 Bad Request: /api/users/login/
+Watching for file changes with StatReloader
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/carts/carts/
+Bad Request: /api/users/login/
+Bad Request: /api/users/login/
+Bad Request: /api/users/login/
+Bad Request: /api/users/register/
+Bad Request: /api/users/register/
+Bad Request: /api/products/products/
+Bad Request: /api/products/products/
+Bad Request: /api/products/products/
+Bad Request: /api/products/products/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/users/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/wishlist/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/wishlist/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/wishlist/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/wishlist/serializers.py changed, reloading.
+Watching for file changes with StatReloader

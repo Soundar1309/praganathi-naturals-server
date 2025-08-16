@@ -51,6 +51,7 @@ urlpatterns = [
     path('api/orders/', include('orders.urls')),
     path('api/carts/', include('carts.urls')),
     path('api/notifications/', include('notifications.urls')),
+    path('api/wishlist/', include('wishlist.urls')),
 
     # Root view for site
     path('', root_view, name='root'),
