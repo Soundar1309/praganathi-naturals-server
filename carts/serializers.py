@@ -29,10 +29,10 @@ class CartItemSerializer(serializers.ModelSerializer):
     
     def create(self, validated_data):
         product_id = validated_data.pop('product_id')
-        user = self.context['request'].user
+        request = self.context['request']
         
-        # Get or create cart for the user
-        cart, created = Cart.objects.get_or_create(user=user)
+        # Get or create cart for the user (authenticated or anonymous)
+        cart = Cart.get_or_create_cart(request)
         
         # Check if cart item already exists
         try:

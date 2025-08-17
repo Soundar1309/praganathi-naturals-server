@@ -6,7 +6,8 @@ from products.models import Product
 
 class Cart(models.Model):
     """Cart model equivalent to Rails Cart model"""
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='cart')
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='cart', null=True, blank=True)
+    session_key = models.CharField(max_length=40, null=True, blank=True, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
@@ -14,7 +15,10 @@ class Cart(models.Model):
         db_table = 'carts'
     
     def __str__(self):
-        return f"Cart for {self.user.email}"
+        if self.user:
+            return f"Cart for {self.user.email}"
+        else:
+            return f"Anonymous cart {self.session_key}"
     
     @property
     def total(self):
@@ -23,6 +27,21 @@ class Cart(models.Model):
     @property
     def item_count(self):
         return self.cart_items.count()
+    
+    @classmethod
+    def get_or_create_cart(cls, request):
+        """Get or create cart for authenticated or anonymous user"""
+        if request.user.is_authenticated:
+            cart, created = cls.objects.get_or_create(user=request.user)
+        else:
+            # Ensure session exists and is saved
+            if not request.session.session_key:
+                request.session.create()
+                request.session.save()
+            
+            session_key = request.session.session_key
+            cart, created = cls.objects.get_or_create(session_key=session_key, user=None)
+        return cart
 
 
 class CartItem(models.Model):

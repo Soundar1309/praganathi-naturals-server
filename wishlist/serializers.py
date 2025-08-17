@@ -12,22 +12,22 @@ class WishlistItemSerializer(serializers.ModelSerializer):
         read_only_fields = ['id', 'added_at']
     
     def create(self, validated_data):
-        user = self.context['request'].user
+        request = self.context['request']
         product_id = validated_data.pop('product_id')
         
         # Check if item already exists
-        if WishlistItem.objects.filter(user=user, product_id=product_id).exists():
+        if WishlistItem.check_wishlist_status(request, product_id):
             raise serializers.ValidationError("Product is already in your wishlist")
         
-        # Create wishlist item
-        wishlist_item = WishlistItem.objects.create(
-            user=user,
-            product_id=product_id
-        )
+        # Get or create wishlist item using the new method
+        from products.models import Product
+        product = Product.objects.get(id=product_id)
+        wishlist_item = WishlistItem.get_or_create_wishlist_item(request, product)
         
-        # Update user's wishlist field
-        user.wishlist.append(product_id)
-        user.save()
+        # Update user's wishlist field if authenticated
+        if request.user.is_authenticated and product_id not in request.user.wishlist:
+            request.user.wishlist.append(product_id)
+            request.user.save()
         
         return wishlist_item
     

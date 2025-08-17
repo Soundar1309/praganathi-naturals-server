@@ -9,35 +9,34 @@ from .serializers import CartSerializer, CartItemSerializer
 class CartView(generics.RetrieveAPIView):
     """Cart view equivalent to Rails CartsController"""
     serializer_class = CartSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = []  # Allow anonymous users
     
     def get_object(self):
-        # Get or create cart for the user
-        cart, created = Cart.objects.get_or_create(user=self.request.user)
-        return cart
+        # Get or create cart for the user (authenticated or anonymous)
+        return Cart.get_or_create_cart(self.request)
 
 
 class CartItemViewSet(generics.ListCreateAPIView):
     """CartItem views equivalent to Rails CartItemsController"""
     serializer_class = CartItemSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = []  # Allow anonymous users
     
     def get_queryset(self):
-        cart, created = Cart.objects.get_or_create(user=self.request.user)
+        cart = Cart.get_or_create_cart(self.request)
         return CartItem.objects.filter(cart=cart).select_related('product')
     
     def perform_create(self, serializer):
-        cart, created = Cart.objects.get_or_create(user=self.request.user)
+        cart = Cart.get_or_create_cart(self.request)
         serializer.save(cart=cart)
 
 
 class CartItemDetailView(generics.RetrieveUpdateDestroyAPIView):
     """CartItem detail view"""
     serializer_class = CartItemSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = []  # Allow anonymous users
     
     def get_queryset(self):
-        cart, created = Cart.objects.get_or_create(user=self.request.user)
+        cart = Cart.get_or_create_cart(self.request)
         return CartItem.objects.filter(cart=cart).select_related('product')
     
     def update(self, request, *args, **kwargs):
