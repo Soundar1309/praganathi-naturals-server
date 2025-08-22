@@ -22,6 +22,8 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '13.235.200.199',
+    'pragathinaturalfarm.com',
+    'www.pragathinaturalfarm.com',
     'backend.pragathinaturalfarm.com',
 ]
 
