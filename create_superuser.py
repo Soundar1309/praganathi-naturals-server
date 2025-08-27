@@ -26,15 +26,13 @@ def create_superuser():
     try:
         user = User.objects.create_superuser(
             email='admin@ecommerce.com',
-            username='admin',
+            name='Admin User',
             password='admin123',
-            first_name='Admin',
-            last_name='User',
             role='admin'
         )
         print(f"✅ Superuser created successfully!")
         print(f"   Email: {user.email}")
-        print(f"   Username: {user.username}")
+        print(f"   Name: {user.name}")
         print(f"   Password: admin123")
     except Exception as e:
         print(f"❌ Error creating superuser: {e}")

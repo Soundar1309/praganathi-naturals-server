@@ -5,7 +5,7 @@ from .models import User, Address
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'email', 'username', 'first_name', 'last_name', 'role', 'phone', 'date_joined']
+        fields = ['id', 'email', 'name', 'role', 'phone', 'date_joined']
         read_only_fields = ['id', 'date_joined']
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
@@ -13,7 +13,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = User
-        fields = ['email', 'username', 'password', 'password_confirmation', 'first_name', 'last_name', 'phone']
+        fields = ['email', 'name', 'password', 'password_confirmation', 'phone']
         extra_kwargs = {
             'password': {'write_only': True}
         }
@@ -31,7 +31,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 class UserUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'phone']
+        fields = ['name', 'phone']
 
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()

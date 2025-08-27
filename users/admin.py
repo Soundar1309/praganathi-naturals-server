@@ -4,9 +4,9 @@ from .models import User, Address
 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
-    list_display = ['email', 'username', 'first_name', 'last_name', 'role', 'is_staff', 'is_active']
+    list_display = ['email', 'name', 'role', 'is_staff', 'is_active']
     list_filter = ['role', 'is_staff', 'is_active', 'date_joined']
-    search_fields = ['email', 'username', 'first_name', 'last_name']
+    search_fields = ['email', 'name']
     ordering = ['email']
     
     fieldsets = UserAdmin.fieldsets + (
