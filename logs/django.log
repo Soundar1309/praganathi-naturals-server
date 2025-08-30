@@ -1688,3 +1688,33 @@ Watching for file changes with StatReloader
 /home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/users/models.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/products/products/1/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/products/products/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/wishlist/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
