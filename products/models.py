@@ -40,6 +40,7 @@ class Product(models.Model):
         help_text="Offer price of the product (automatically set to price)"
     )
     stock = models.PositiveIntegerField(default=0)
+    unit = models.CharField(max_length=50, default='1 kg', help_text="Product unit (e.g., '1 kg', '500 ml', '10 nos')")
     image = models.ImageField(upload_to='products/', blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
