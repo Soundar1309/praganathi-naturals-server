@@ -34,10 +34,11 @@ class ProductSerializer(serializers.ModelSerializer):
     
     def validate(self, data):
         """Validate that original_price >= price"""
-        original_price = data.get('original_price', 10000.00)
+        original_price = data.get('original_price')
         price = data.get('price')
         
-        if price and original_price and price >= original_price:
+        # If original_price is not provided, it will be set to price in the model's save method
+        if original_price and price and price >= original_price:
             raise serializers.ValidationError({
                 'price': 'Price must be less than original price to show as an offer.'
             })

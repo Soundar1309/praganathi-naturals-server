@@ -1718,3 +1718,37 @@ Watching for file changes with StatReloader
 /home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/serializers.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/products/products/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/products/products/
+Unauthorized: /api/products/categories/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/products/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/blogs/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/blogs/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/blogs/apps.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/blogs/pragathi-natural-farm-cultivating-a-self-sustaining-organic-ecosystem/
+Unauthorized: /api/blogs/pragathi-natural-farm-cultivating-a-self-sustaining-organic-ecosystem/related/

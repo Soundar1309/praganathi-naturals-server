@@ -28,8 +28,9 @@ class Product(models.Model):
         max_digits=10, 
         decimal_places=2, 
         validators=[MinValueValidator(0)],
-        default=10000.00,
-        help_text="Original price of the product (default: 10000 Rs)"
+        null=True,
+        blank=True,
+        help_text="Original price of the product (automatically set to price if not provided)"
     )
     offer_price = models.DecimalField(
         max_digits=10, 
@@ -62,9 +63,9 @@ class Product(models.Model):
             })
     
     def save(self, *args, **kwargs):
-        """Ensure original_price is set to default if not provided and offer_price equals price"""
+        """Ensure original_price is set to price if not provided and offer_price equals price"""
         if not self.original_price:
-            self.original_price = 10000.00
+            self.original_price = self.price
         
         # Always set offer_price to the same value as price
         self.offer_price = self.price
