@@ -1752,3 +1752,55 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Unauthorized: /api/blogs/pragathi-natural-farm-cultivating-a-self-sustaining-organic-ecosystem/
 Unauthorized: /api/blogs/pragathi-natural-farm-cultivating-a-self-sustaining-organic-ecosystem/related/
+Watching for file changes with StatReloader
+Unauthorized: /api/products/products/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/products/products/
+Unauthorized: /api/wishlist/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/payments/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/payments/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/payments/apps.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/users/profile/
+Unauthorized: /api/payments/create-order/
+Bad Request: /api/users/login/
+Unauthorized: /api/payments/create-order/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/payments/create-order/
+Unauthorized: /api/payments/create-order/
+Watching for file changes with StatReloader
+Unauthorized: /api/products/categories/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/products/products/
+Unauthorized: /api/products/products/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/payments/create-order/
+Bad Request: /api/users/login/
+Unauthorized: /api/payments/create-order/
+Unauthorized: /api/payments/create-order/
+Unauthorized: /api/payments/create-order/
+Unauthorized: /api/payments/create-order/

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'notifications',
     'wishlist',
     'blogs',
+    'payments',
 ]
 
 MIDDLEWARE = [

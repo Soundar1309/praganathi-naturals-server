@@ -53,6 +53,7 @@ urlpatterns = [
     path('api/notifications/', include('notifications.urls')),
     path('api/wishlist/', include('wishlist.urls')),
     path('api/blogs/', include('blogs.urls')),
+    path('api/payments/', include('payments.urls')),
 
     # Root view for site
     path('', root_view, name='root'),

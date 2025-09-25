@@ -699,7 +699,7 @@ def deploy_comprehensive_blogs():
             
             # Add image if specified
             if 'image' in blog_data and blog_data['image']:
-                image_path = f'/home/sasikalavijayakumar/pragathi_server/PRAGATHI-UI/public/assets/{blog_data["image"]}'
+                image_path = f'/var/www/PRAGATHI-UI/public/assets/{blog_data["image"]}'
                 if os.path.exists(image_path):
                     with open(image_path, 'rb') as f:
                         django_file = File(f)
