@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator
 from users.models import User
-from products.models import Product
+from products.models import Product, ProductVariation
 
 
 class Cart(models.Model):
@@ -47,18 +47,63 @@ class Cart(models.Model):
 class CartItem(models.Model):
     """CartItem model equivalent to Rails CartItem model"""
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='cart_items')
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, blank=True)
+    product_variation = models.ForeignKey(ProductVariation, on_delete=models.CASCADE, null=True, blank=True)
     quantity = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1)])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
     class Meta:
         db_table = 'cart_items'
-        unique_together = ['cart', 'product']
+        unique_together = [
+            ['cart', 'product'],
+            ['cart', 'product_variation']
+        ]
     
     def __str__(self):
-        return f"{self.quantity}x {self.product.title} in {self.cart}"
+        if self.product_variation:
+            return f"{self.quantity}x {self.product_variation.display_name} of {self.product_variation.product.title} in {self.cart}"
+        else:
+            return f"{self.quantity}x {self.product.title} in {self.cart}"
     
     @property
     def subtotal(self):
-        return self.product.price * self.quantity 
+        if self.product_variation:
+            return self.product_variation.price * self.quantity
+        else:
+            return self.product.price * self.quantity
+    
+    @property
+    def item_name(self):
+        """Get the display name for the cart item"""
+        if self.product_variation:
+            return f"{self.product_variation.product.title} - {self.product_variation.display_name}"
+        else:
+            return self.product.title
+    
+    @property
+    def item_price(self):
+        """Get the price for the cart item"""
+        if self.product_variation:
+            return self.product_variation.price
+        else:
+            return self.product.price
+    
+    @property
+    def item_image(self):
+        """Get the image for the cart item"""
+        if self.product_variation and self.product_variation.image:
+            return self.product_variation.image
+        elif self.product and self.product.image:
+            return self.product.image
+        return None
+    
+    def clean(self):
+        """Ensure either product or product_variation is set, but not both"""
+        from django.core.exceptions import ValidationError
+        if not self.product and not self.product_variation:
+            raise ValidationError('Either product or product_variation must be set.')
+        if self.product and self.product_variation:
+            raise ValidationError('Cannot set both product and product_variation.')
+        if self.product_variation and self.product_variation.product != self.product:
+            raise ValidationError('Product variation must belong to the specified product.') 

@@ -87,4 +87,79 @@ class Product(models.Model):
         """Calculate discount percentage if offer exists"""
         if self.has_offer:
             return round(((self.original_price - self.price) / self.original_price) * 100, 1)
-        return 0 
+        return 0
+
+
+class ProductVariation(models.Model):
+    """Product variation model for different quantities and units"""
+    UNIT_CHOICES = [
+        ('ml', 'Milliliter'),
+        ('l', 'Liter'),
+        ('g', 'Gram'),
+        ('kg', 'Kilogram'),
+        ('nos', 'Numbers'),
+        ('pcs', 'Pieces'),
+    ]
+    
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='variations')
+    quantity = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)])
+    unit = models.CharField(max_length=10, choices=UNIT_CHOICES)
+    price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)])
+    original_price = models.DecimalField(
+        max_digits=10, 
+        decimal_places=2, 
+        validators=[MinValueValidator(0)],
+        null=True,
+        blank=True,
+        help_text="Original price of this variation"
+    )
+    stock = models.PositiveIntegerField(default=0)
+    image = models.ImageField(upload_to='products/variations/', blank=True, null=True)
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        db_table = 'product_variations'
+        unique_together = ['product', 'quantity', 'unit']
+        ordering = ['quantity', 'unit']
+    
+    def __str__(self):
+        return f"{self.product.title} - {self.quantity} {self.unit}"
+    
+    def clean(self):
+        """Custom validation to ensure original_price >= price"""
+        super().clean()
+        if self.original_price and self.price and self.original_price < self.price:
+            raise ValidationError({
+                'original_price': 'Original price cannot be less than current price.'
+            })
+    
+    def save(self, *args, **kwargs):
+        """Ensure original_price is set to price if not provided"""
+        if not self.original_price:
+            self.original_price = self.price
+        
+        self.full_clean()
+        super().save(*args, **kwargs)
+    
+    @property
+    def available(self):
+        return self.stock > 0
+    
+    @property
+    def has_offer(self):
+        """Check if variation has an offer price"""
+        return self.original_price is not None and self.original_price > self.price
+    
+    @property
+    def discount_percentage(self):
+        """Calculate discount percentage if offer exists"""
+        if self.has_offer:
+            return round(((self.original_price - self.price) / self.original_price) * 100, 1)
+        return 0
+    
+    @property
+    def display_name(self):
+        """Get display name for the variation"""
+        return f"{self.quantity} {self.unit}" 

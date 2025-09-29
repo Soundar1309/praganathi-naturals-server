@@ -1,18 +1,54 @@
 from rest_framework import serializers
 from .models import Cart, CartItem
-from products.serializers import ProductSerializer
+from products.serializers import ProductSerializer, ProductVariationSerializer
 
 
 class CartItemSerializer(serializers.ModelSerializer):
     """Serializer for CartItem model"""
     product = ProductSerializer(read_only=True)
-    product_id = serializers.IntegerField(write_only=True)
+    product_variation = ProductVariationSerializer(read_only=True)
+    product_id = serializers.IntegerField(write_only=True, required=False)
+    product_variation_id = serializers.IntegerField(write_only=True, required=False)
     subtotal = serializers.ReadOnlyField()
+    item_name = serializers.ReadOnlyField()
+    item_price = serializers.ReadOnlyField()
+    item_image = serializers.SerializerMethodField()
     
     class Meta:
         model = CartItem
-        fields = ['id', 'product', 'product_id', 'quantity', 'subtotal', 'created_at', 'updated_at']
+        fields = [
+            'id', 'product', 'product_variation', 'product_id', 'product_variation_id',
+            'quantity', 'subtotal', 'item_name', 'item_price', 'item_image',
+            'created_at', 'updated_at'
+        ]
         read_only_fields = ['id', 'created_at', 'updated_at']
+    
+    def get_item_image(self, obj):
+        """Return the image URL for the cart item"""
+        if obj.product_variation and obj.product_variation.image:
+            request = self.context.get('request')
+            if request:
+                return request.build_absolute_uri(obj.product_variation.image.url)
+            return obj.product_variation.image.url
+        elif obj.product and obj.product.image:
+            request = self.context.get('request')
+            if request:
+                return request.build_absolute_uri(obj.product.image.url)
+            return obj.product.image.url
+        return None
+    
+    def validate(self, data):
+        """Validate that either product_id or product_variation_id is provided, but not both"""
+        product_id = data.get('product_id')
+        product_variation_id = data.get('product_variation_id')
+        
+        if not product_id and not product_variation_id:
+            raise serializers.ValidationError("Either product_id or product_variation_id must be provided.")
+        
+        if product_id and product_variation_id:
+            raise serializers.ValidationError("Cannot provide both product_id and product_variation_id.")
+        
+        return data
     
     def validate_product_id(self, value):
         from products.models import Product
@@ -22,28 +58,54 @@ class CartItemSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Product does not exist.")
         return value
     
+    def validate_product_variation_id(self, value):
+        from products.models import ProductVariation
+        try:
+            ProductVariation.objects.get(id=value)
+        except ProductVariation.DoesNotExist:
+            raise serializers.ValidationError("Product variation does not exist.")
+        return value
+    
     def validate_quantity(self, value):
         if value <= 0:
             raise serializers.ValidationError("Quantity must be greater than 0.")
         return value
     
     def create(self, validated_data):
-        product_id = validated_data.pop('product_id')
         request = self.context['request']
         
         # Get or create cart for the user (authenticated or anonymous)
         cart = Cart.get_or_create_cart(request)
         
-        # Check if cart item already exists
-        try:
-            cart_item = CartItem.objects.get(cart=cart, product_id=product_id)
-            cart_item.quantity += validated_data.get('quantity', 1)
-            cart_item.save()
-            return cart_item
-        except CartItem.DoesNotExist:
-            validated_data['cart'] = cart
-            validated_data['product_id'] = product_id
-            return super().create(validated_data)
+        # Handle product variation
+        if 'product_variation_id' in validated_data:
+            product_variation_id = validated_data.pop('product_variation_id')
+            
+            # Check if cart item already exists for this variation
+            try:
+                cart_item = CartItem.objects.get(cart=cart, product_variation_id=product_variation_id)
+                cart_item.quantity += validated_data.get('quantity', 1)
+                cart_item.save()
+                return cart_item
+            except CartItem.DoesNotExist:
+                validated_data['cart'] = cart
+                validated_data['product_variation_id'] = product_variation_id
+                return super().create(validated_data)
+        
+        # Handle regular product
+        elif 'product_id' in validated_data:
+            product_id = validated_data.pop('product_id')
+            
+            # Check if cart item already exists for this product
+            try:
+                cart_item = CartItem.objects.get(cart=cart, product_id=product_id)
+                cart_item.quantity += validated_data.get('quantity', 1)
+                cart_item.save()
+                return cart_item
+            except CartItem.DoesNotExist:
+                validated_data['cart'] = cart
+                validated_data['product_id'] = product_id
+                return super().create(validated_data)
 
 
 class CartSerializer(serializers.ModelSerializer):
