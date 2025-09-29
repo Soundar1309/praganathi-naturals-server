@@ -1804,3 +1804,92 @@ Unauthorized: /api/payments/create-order/
 Unauthorized: /api/payments/create-order/
 Unauthorized: /api/payments/create-order/
 Unauthorized: /api/payments/create-order/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/products/products/
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/wishlist/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/products/products/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/products/products/
+Unauthorized: /api/users/profile/
+Bad Request: /api/users/register/
+Bad Request: /api/users/register/
+Bad Request: /api/users/login/
+Bad Request: /api/users/register/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/ecommerce/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/products/products/
+Unauthorized: /api/products/products/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/wishlist/
+Internal Server Error: /api/admin/stats/
+Internal Server Error: /api/admin/stats/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/admin_dashboard/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/orders/
+Not Found: /api/orders/
+Not Found: /api/orders/
+Not Found: /api/orders/
+Not Found: /api/orders/
+Not Found: /api/orders/
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/orders/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/orders/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sasikalavijayakumar/pragathi_server/PRAGATHI-SERVER/orders/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/wishlist/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/carts/carts/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/products/categories/
+Unauthorized: /api/users/profile/
+Unauthorized: /api/wishlist/
+Unauthorized: /api/users/profile/

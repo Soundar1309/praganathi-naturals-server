@@ -54,6 +54,7 @@ urlpatterns = [
     path('api/wishlist/', include('wishlist.urls')),
     path('api/blogs/', include('blogs.urls')),
     path('api/payments/', include('payments.urls')),
+    path('api/admin/', include('admin_dashboard.urls')),
 
     # Root view for site
     path('', root_view, name='root'),

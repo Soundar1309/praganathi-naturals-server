@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'wishlist',
     'blogs',
     'payments',
+    'admin_dashboard',
 ]
 
 MIDDLEWARE = [
