@@ -16,15 +16,16 @@ class ProductSerializer(serializers.ModelSerializer):
     category = CategorySerializer(read_only=True)
     category_id = serializers.IntegerField(write_only=True)
     image_url = serializers.SerializerMethodField()
+    default_variation = serializers.SerializerMethodField()
     
     class Meta:
         model = Product
         fields = [
             'id', 'title', 'description', 'price', 'original_price', 'offer_price',
-            'stock', 'unit', 'image', 'image_url', 'category', 'category_id', 'created_at', 'updated_at',
-            'has_offer', 'discount_percentage'
+            'stock', 'unit', 'product_type', 'image', 'image_url', 'category', 'category_id', 
+            'created_at', 'updated_at', 'has_offer', 'discount_percentage', 'default_variation'
         ]
-        read_only_fields = ['id', 'created_at', 'updated_at', 'has_offer', 'discount_percentage']
+        read_only_fields = ['id', 'created_at', 'updated_at', 'has_offer', 'discount_percentage', 'default_variation']
     
     def get_image_url(self, obj):
         """Return the image URL if image exists"""
@@ -33,6 +34,13 @@ class ProductSerializer(serializers.ModelSerializer):
             if request:
                 return request.build_absolute_uri(obj.image.url)
             return obj.image.url
+        return None
+    
+    def get_default_variation(self, obj):
+        """Return the default variation (250g/250ml) for product listing"""
+        default_var = obj.get_default_variation()
+        if default_var:
+            return ProductVariationSerializer(default_var, context=self.context).data
         return None
     
     def validate_category_id(self, value):
@@ -120,7 +128,7 @@ class ProductWithVariationsSerializer(serializers.ModelSerializer):
         model = Product
         fields = [
             'id', 'title', 'description', 'price', 'original_price', 'offer_price',
-            'stock', 'unit', 'image', 'image_url', 'category', 'category_id', 'created_at', 'updated_at',
+            'stock', 'unit', 'product_type', 'image', 'image_url', 'category', 'category_id', 'created_at', 'updated_at',
             'has_offer', 'discount_percentage', 'variations'
         ]
         read_only_fields = ['id', 'created_at', 'updated_at', 'has_offer', 'discount_percentage']

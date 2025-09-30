@@ -21,6 +21,12 @@ class Category(models.Model):
 
 class Product(models.Model):
     """Product model equivalent to Rails Product model"""
+    PRODUCT_TYPE_CHOICES = [
+        ('solid', 'Solid (Rice, Pulses, etc.)'),
+        ('liquid', 'Liquid (Oil, etc.)'),
+        ('other', 'Other'),
+    ]
+    
     title = models.CharField(max_length=255)
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)])
@@ -42,6 +48,12 @@ class Product(models.Model):
     )
     stock = models.PositiveIntegerField(default=0)
     unit = models.CharField(max_length=50, default='1 kg', help_text="Product unit (e.g., '1 kg', '500 ml', '10 nos')")
+    product_type = models.CharField(
+        max_length=10, 
+        choices=PRODUCT_TYPE_CHOICES, 
+        default='solid',
+        help_text="Product type determines available quantity variants"
+    )
     image = models.ImageField(upload_to='products/', blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -88,6 +100,20 @@ class Product(models.Model):
         if self.has_offer:
             return round(((self.original_price - self.price) / self.original_price) * 100, 1)
         return 0
+    
+    def get_default_variation(self):
+        """Get the default variation (250g for solid, 250ml for liquid)"""
+        if self.product_type == 'solid':
+            return self.variations.filter(quantity=250, unit='g').first()
+        elif self.product_type == 'liquid':
+            return self.variations.filter(quantity=250, unit='ml').first()
+        else:
+            # For other types, return the first variation or create a default one
+            return self.variations.first()
+    
+    def get_available_variations(self):
+        """Get all active variations ordered by quantity"""
+        return self.variations.filter(is_active=True).order_by('quantity', 'unit')
 
 
 class ProductVariation(models.Model):
