@@ -13,12 +13,15 @@ class CartItemSerializer(serializers.ModelSerializer):
     item_name = serializers.ReadOnlyField()
     item_price = serializers.ReadOnlyField()
     item_image = serializers.SerializerMethodField()
+    effective_quantity = serializers.ReadOnlyField()
+    effective_unit = serializers.ReadOnlyField()
     
     class Meta:
         model = CartItem
         fields = [
             'id', 'product', 'product_variation', 'product_id', 'product_variation_id',
-            'quantity', 'subtotal', 'item_name', 'item_price', 'item_image',
+            'quantity', 'custom_quantity', 'custom_unit', 'subtotal', 'item_name', 
+            'item_price', 'item_image', 'effective_quantity', 'effective_unit',
             'created_at', 'updated_at'
         ]
         read_only_fields = ['id', 'created_at', 'updated_at']
@@ -37,18 +40,6 @@ class CartItemSerializer(serializers.ModelSerializer):
             return obj.product.image.url
         return None
     
-    def validate(self, data):
-        """Validate that either product_id or product_variation_id is provided, but not both"""
-        product_id = data.get('product_id')
-        product_variation_id = data.get('product_variation_id')
-        
-        if not product_id and not product_variation_id:
-            raise serializers.ValidationError("Either product_id or product_variation_id must be provided.")
-        
-        if product_id and product_variation_id:
-            raise serializers.ValidationError("Cannot provide both product_id and product_variation_id.")
-        
-        return data
     
     def validate_product_id(self, value):
         from products.models import Product
@@ -70,6 +61,33 @@ class CartItemSerializer(serializers.ModelSerializer):
         if value <= 0:
             raise serializers.ValidationError("Quantity must be greater than 0.")
         return value
+    
+    def validate_custom_quantity(self, value):
+        if value is not None and value <= 0:
+            raise serializers.ValidationError("Custom quantity must be greater than 0.")
+        return value
+    
+    def validate(self, data):
+        """Validate that either product_id or product_variation_id is provided, but not both"""
+        product_id = data.get('product_id')
+        product_variation_id = data.get('product_variation_id')
+        
+        if not product_id and not product_variation_id:
+            raise serializers.ValidationError("Either product_id or product_variation_id must be provided.")
+        
+        if product_id and product_variation_id:
+            raise serializers.ValidationError("Cannot provide both product_id and product_variation_id.")
+        
+        # Validate custom quantity and unit
+        custom_quantity = data.get('custom_quantity')
+        custom_unit = data.get('custom_unit')
+        
+        if custom_quantity and not custom_unit:
+            raise serializers.ValidationError("Custom unit must be provided when custom quantity is set.")
+        if custom_unit and not custom_quantity:
+            raise serializers.ValidationError("Custom quantity must be provided when custom unit is set.")
+        
+        return data
     
     def create(self, validated_data):
         request = self.context['request']
