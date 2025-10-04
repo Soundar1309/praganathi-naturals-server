@@ -28,12 +28,20 @@ class CartItemSerializer(serializers.ModelSerializer):
     
     def get_item_image(self, obj):
         """Return the image URL for the cart item"""
-        if obj.product_variation and obj.product_variation.image:
-            request = self.context.get('request')
-            if request:
-                return request.build_absolute_uri(obj.product_variation.image.url)
-            return obj.product_variation.image.url
+        if obj.product_variation:
+            # For variations, check variation image first, then parent product image
+            if obj.product_variation.image:
+                request = self.context.get('request')
+                if request:
+                    return request.build_absolute_uri(obj.product_variation.image.url)
+                return obj.product_variation.image.url
+            elif obj.product_variation.product and obj.product_variation.product.image:
+                request = self.context.get('request')
+                if request:
+                    return request.build_absolute_uri(obj.product_variation.product.image.url)
+                return obj.product_variation.product.image.url
         elif obj.product and obj.product.image:
+            # For regular products, use product image
             request = self.context.get('request')
             if request:
                 return request.build_absolute_uri(obj.product.image.url)

@@ -128,9 +128,14 @@ class CartItem(models.Model):
     @property
     def item_image(self):
         """Get the image for the cart item"""
-        if self.product_variation and self.product_variation.image:
-            return self.product_variation.image
+        if self.product_variation:
+            # For variations, check variation image first, then parent product image
+            if self.product_variation.image:
+                return self.product_variation.image
+            elif self.product_variation.product and self.product_variation.product.image:
+                return self.product_variation.product.image
         elif self.product and self.product.image:
+            # For regular products, use product image
             return self.product.image
         return None
     
