@@ -46,6 +46,8 @@ class Product(models.Model):
         blank=True,
         help_text="Offer price of the product (automatically set to price)"
     )
+    # Manually control whether the product is considered in stock (can be toggled via UI)
+    is_in_stock = models.BooleanField(default=True, help_text="Manually mark product as in stock or out of stock")
     stock = models.PositiveIntegerField(default=0)
     unit = models.CharField(max_length=50, default='1 kg', help_text="Product unit (e.g., '1 kg', '500 ml', '10 nos')")
     product_type = models.CharField(
@@ -87,7 +89,8 @@ class Product(models.Model):
     
     @property
     def available(self):
-        return self.stock > 0
+        # Product is available only if it has stock and is manually marked as in stock
+        return self.is_in_stock and self.stock > 0
     
     @property
     def has_offer(self):

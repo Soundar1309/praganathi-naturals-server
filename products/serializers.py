@@ -22,7 +22,7 @@ class ProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = [
             'id', 'title', 'description', 'price', 'original_price', 'offer_price',
-            'stock', 'unit', 'product_type', 'image', 'image_url', 'category', 'category_id', 
+            'stock', 'unit', 'product_type', 'is_in_stock', 'image', 'image_url', 'category', 'category_id', 
             'created_at', 'updated_at', 'has_offer', 'discount_percentage', 'default_variation'
         ]
         read_only_fields = ['id', 'created_at', 'updated_at', 'has_offer', 'discount_percentage', 'default_variation']
@@ -128,7 +128,7 @@ class ProductWithVariationsSerializer(serializers.ModelSerializer):
         model = Product
         fields = [
             'id', 'title', 'description', 'price', 'original_price', 'offer_price',
-            'stock', 'unit', 'product_type', 'image', 'image_url', 'category', 'category_id', 'created_at', 'updated_at',
+            'stock', 'unit', 'product_type', 'is_in_stock', 'image', 'image_url', 'category', 'category_id', 'created_at', 'updated_at',
             'has_offer', 'discount_percentage', 'variations'
         ]
         read_only_fields = ['id', 'created_at', 'updated_at', 'has_offer', 'discount_percentage']
