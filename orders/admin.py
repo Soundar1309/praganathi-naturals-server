@@ -20,7 +20,7 @@ class OrderAdmin(admin.ModelAdmin):
 
 @admin.register(OrderItem)
 class OrderItemAdmin(admin.ModelAdmin):
-    list_display = ['order', 'product', 'product', 'quantity', 'price', 'subtotal', 'created_at']
+    list_display = ['order', 'product', 'quantity', 'price', 'subtotal', 'created_at']
     list_filter = ['created_at']
     search_fields = ['order__id', 'product__title']
     ordering = ['-created_at']

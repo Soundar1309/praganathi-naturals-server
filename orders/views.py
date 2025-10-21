@@ -4,6 +4,7 @@ from rest_framework.decorators import api_view, permission_classes
 from django.db import transaction
 from django.shortcuts import get_object_or_404
 from users.models import User
+from carts.models import Cart
 from .models import Order, OrderItem
 from .serializers import OrderSerializer, OrderCreateSerializer, OrderUpdateSerializer
 from notifications.models import Notification
@@ -33,7 +34,12 @@ class OrderViewSet(generics.ListCreateAPIView):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             user = request.user
-            cart = user.cart
+            
+            # Get or create cart for the user
+            try:
+                cart = user.cart
+            except Cart.DoesNotExist:
+                cart = Cart.objects.create(user=user)
             
             # Check if cart exists and has items
             if not cart or not cart.cart_items.exists():
@@ -53,8 +59,16 @@ class OrderViewSet(generics.ListCreateAPIView):
             order_total = 0
             
             # Process cart items
-            for cart_item in cart.cart_items.select_related('product').all():
-                product = cart_item.product
+            for cart_item in cart.cart_items.select_related('product', 'product_variation__product').all():
+                # Determine which product to use
+                if cart_item.product:
+                    product = cart_item.product
+                    price = product.price
+                elif cart_item.product_variation:
+                    product = cart_item.product_variation.product
+                    price = cart_item.product_variation.price
+                else:
+                    continue  # Skip items without product or variation
                 
                 # Check stock availability
                 if product.stock < cart_item.quantity:
@@ -65,14 +79,14 @@ class OrderViewSet(generics.ListCreateAPIView):
                     order=order,
                     product=product,
                     quantity=cart_item.quantity,
-                    price=product.price
+                    price=price
                 )
                 
                 # Update product stock
                 product.stock -= cart_item.quantity
                 product.save()
                 
-                order_total += product.price * cart_item.quantity
+                order_total += price * cart_item.quantity
             
             # Update order total
             order.total = order_total
