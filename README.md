@@ -13,6 +13,7 @@ A Django REST API backend for the ecommerce application, converted from Ruby on 
 
 2. **Install Dependencies**
    ```bash
+   pip install --upgrade pip setuptools wheel
    pip install -r ../requirements.txt
    ```
 
